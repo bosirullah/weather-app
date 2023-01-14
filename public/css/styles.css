@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=League+Spartan:wght@700&family=Oswald:wght@500&family=Sofia+Sans:wght@400;500&display=swap');
+body{
+    background-image: linear-gradient(to right, #3C2A21, #D5CEA3);   
+    font-family: 'helvetica neue';
+}
+
+.initial-container{
+    padding: 0 0 27px;
+}
+
+.heading{
+    font-family: 'Abril Fatface', cursive;
+    color: #3C2A21;
+    text-align: start;
+    font-size: 40px;
+}
+
+input[type="text"]{
+    width: 350px;
+    background-color: #E5E5CB;
+    border: hidden;
+    border-radius: 1rem 0 0 1rem;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+input[placeholder = "Name of the city"]{
+    padding: 7px 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+button[type="submit"]{
+    background-color: #3C2A21;
+    border-radius: 0 1rem 1rem 0;
+    border: none
+}
+
+button[type="submit"]:hover{
+    background-color: #583e31;
+}
+
+.input-group{
+    padding: 15px 0;
+}
+
+.container{
+    width: 470px;
+    height: 480px;
+    background-color: white;
+    padding: 40px;
+    text-align: start;
+    font-family: 'Abril Fatface', cursive;
+    background-color: #D5CEA3;
+    backdrop-filter: blur(50px);
+    margin: 69px auto;
+    border-radius: 20px;
+    color: #583e31;
+}
+
+.container p{
+    font-size: 17px;
+}
+
+.aboutWeather{
+    display: flex;
+}
+
+.cityName{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+
+}
+
+.desc{
+    align-self: center;
+    margin: 0;
+}
+
+.temp{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+}
+
+.otherContent p{
+    margin: 0;
+}
+
+@media (max-width: 523px){
+    .container{
+        width: 340px;
+        padding: 25px;
+    }
+
+    .heading{
+        font-size: 38px;
+    }
+
+    input[type="text"]{
+        width: 250px;
+    }
+
+    input[placeholder = "Name of the city"]{
+        font-size: 15px;
+    }
+
+    .cityName{
+        font-size: 26px;
+    }
+
+    .temp{
+        font-size: 40px;
+    }
+}

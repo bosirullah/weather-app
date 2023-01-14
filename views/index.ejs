@@ -1,0 +1,30 @@
+<%- include("partials/header") -%>
+    
+    <div class="container">
+        <div class="initial-container">
+            <h1 class="heading">Your Weather</h1>  
+            <form action="/" method="post">
+                <div class="input-group">
+                    <input type="text" name="cityName" placeholder="Name of the city" autocomplete="off">
+                    <button type="submit" class="btn btn-dark">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="2nd-container">
+            <h2 class="cityName">Weather in <%= weatherDetails[0] %> </h2>
+            <h1 class="temp"><%= weatherDetails[1] %> &#8451</h1>
+            <div class="aboutWeather">
+                <img src="<%= weatherDetails[2] %>" alt="">
+                <p class="desc"><%= weatherDetails[3] %> </p>
+            </div>
+            <div class="otherContent">
+                <p>Humidity: <%= weatherDetails[4] %>%</p>
+                <p>Wind speed: <%= weatherDetails[5] %> km/h</p>
+            </div>
+        </div>
+    </div>    
+
+<%- include("partials/footer") -%>
